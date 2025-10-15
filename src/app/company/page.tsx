@@ -4,7 +4,7 @@ import { GridPattern } from '@/components/ui/grid-pattern'
 import { cn } from '@/lib/utils'
 
 export const metadata = {
-  title: 'About Us',
+  title: 'Company',
   description:
     'Learn more about our company, our mission, values, and the team dedicated to creating a minimalist, powerful AI chat experience.',
 }
@@ -24,12 +24,14 @@ export default function Page() {
         )}
       />
 
-      <Content title={`ツ ${title}`} backToHome>
+      <Content title={title} backToHome>
         <p className="text-lg text-muted-foreground">{description}</p>
 
-        <h3 className="text-sm font-mono text-muted-foreground underline decoration-dotted underline-offset-4">
+        <h3 className="text-2xl font-semibold leading-tight">ツ About Us</h3>
+
+        <h4 className="text-sm font-mono text-muted-foreground underline decoration-dotted underline-offset-4">
           Meet the Team
-        </h3>
+        </h4>
         <p>
           We are a small, dedicated team of AI enthusiasts, designers, and
           developers passionate about creating a better chat experience. Each
@@ -37,9 +39,9 @@ export default function Page() {
           vision of innovation and excellence.
         </p>
 
-        <h3 className="text-sm font-mono text-muted-foreground underline decoration-dotted underline-offset-4">
+        <h4 className="text-sm font-mono text-muted-foreground underline decoration-dotted underline-offset-4">
           Our Mission
-        </h3>
+        </h4>
         <p>
           our mission is to simplify the way you interact with AI. We believe
           that technology should enhance your life without adding complexity.
@@ -47,9 +49,9 @@ export default function Page() {
           empowers you to get things done faster and smarter.
         </p>
 
-        <h3 className="text-sm font-mono text-muted-foreground underline decoration-dotted underline-offset-4">
+        <h4 className="text-sm font-mono text-muted-foreground underline decoration-dotted underline-offset-4">
           Our Values
-        </h3>
+        </h4>
         <ul className="flex flex-col gap-4">
           <li>
             <strong>Simplicity:</strong> We prioritize clean design and
@@ -68,9 +70,9 @@ export default function Page() {
           </li>
         </ul>
 
-        <h3 className="text-sm font-mono text-muted-foreground underline decoration-dotted underline-offset-4">
+        <h4 className="text-sm font-mono text-muted-foreground underline decoration-dotted underline-offset-4">
           brand & design
-        </h3>
+        </h4>
         <p>
           Our brand is a reflection of our commitment to simplicity and
           functionality. The name{' '}

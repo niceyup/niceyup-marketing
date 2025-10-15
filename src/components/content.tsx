@@ -16,7 +16,7 @@ export function Content({
   noFooter?: boolean
 }) {
   return (
-    <main className="px-8 sm:px-16 py-8 flex flex-col items-center gap-16">
+    <main className="px-8 sm:px-16 min-h-screen py-8 flex flex-col items-center gap-16">
       <div className="flex flex-1 flex-col justify-center max-w-xl lg:max-w-lg items-start gap-8">
         {withLogo && (
           <div className="flex items-center gap-2 w-full justify-between">
