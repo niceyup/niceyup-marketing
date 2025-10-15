@@ -5,7 +5,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <h1
       className={cn(
-        'flex pointer-events-none select-none items-center gap-4 text-2xl font-bold leading-tight',
+        'font-mono flex pointer-events-none select-none items-center gap-4 text-2xl font-bold leading-tight',
         className,
       )}
     >
