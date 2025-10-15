@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
+import { TypingAnimation } from './ui/typing-animation'
 
 export function Logo({ className }: { className?: string }) {
   return (
@@ -17,7 +18,12 @@ export function Logo({ className }: { className?: string }) {
         width={24}
         height={24}
       />
-      Niceyup_
+      <TypingAnimation
+        words={['Niceyup']}
+        cursorStyle="underscore"
+        loop
+        pauseDelay={1000 * 30}
+      />
     </h1>
   )
 }
