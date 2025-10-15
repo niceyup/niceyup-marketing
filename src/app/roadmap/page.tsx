@@ -23,7 +23,7 @@ export default async function Page() {
 
   return (
     <div className="grid w-full lg:grid-cols-2">
-      <Content title={title} backToHome>
+      <Content title={title} backToHome noFooter>
         <p className="text-lg text-muted-foreground">{description}</p>
 
         {(!!features.length && (

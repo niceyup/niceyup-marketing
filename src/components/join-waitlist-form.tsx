@@ -98,12 +98,12 @@ export function JoinWaitlistForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Why do you want to join the waitlist?</FormLabel>
+              <FormLabel>Why would you like to join the waitlist?</FormLabel>
               <FormControl>
                 <Textarea
                   {...field}
                   className="max-h-32"
-                  placeholder="I want to join because..."
+                  placeholder="Hey! I'm interested in joining the waitlist because..."
                 />
               </FormControl>
               <FormMessage />
@@ -119,10 +119,10 @@ export function JoinWaitlistForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="after:text-muted-foreground after:content-['*']">
-                What is your occupation?
+                What best describes your role?
               </FormLabel>
               <FormDescription>
-                This helps us understand our users better.
+                This helps us tailor the experience to you.
               </FormDescription>
               <FormControl>
                 <RadioGroup value={field.value} onValueChange={field.onChange}>
@@ -131,8 +131,8 @@ export function JoinWaitlistForm() {
                       <FieldContent>
                         <FieldTitle>I'm a developer</FieldTitle>
                         <FieldDescription>
-                          I'm a software developer looking to integrate this
-                          into my projects.
+                          I build software and want to explore how this fits
+                          into my workflow.
                         </FieldDescription>
                       </FieldContent>
                       <RadioGroupItem value="developer" id="developer" />
@@ -143,8 +143,8 @@ export function JoinWaitlistForm() {
                       <FieldContent>
                         <FieldTitle>I'm an entrepreneur</FieldTitle>
                         <FieldDescription>
-                          I'm an entrepreneur interested in using this for my
-                          business.
+                          I’m exploring how this can help my business or team
+                          grow.
                         </FieldDescription>
                       </FieldContent>
                       <RadioGroupItem value="entrepreneur" id="entrepreneur" />
@@ -153,9 +153,9 @@ export function JoinWaitlistForm() {
                   <FieldLabel htmlFor="other">
                     <Field orientation="horizontal">
                       <FieldContent>
-                        <FieldTitle>I want to try it out</FieldTitle>
+                        <FieldTitle>I’m just exploring</FieldTitle>
                         <FieldDescription>
-                          I'm curious to explore and see how it works.
+                          I’m curious to try it out and see what’s possible.
                         </FieldDescription>
                       </FieldContent>
                       <RadioGroupItem value="other" id="other" />
