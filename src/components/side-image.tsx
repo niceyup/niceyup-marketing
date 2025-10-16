@@ -10,17 +10,26 @@ type Props = {
 
 export function SideImage({ children, path, alt = 'Generic', align }: Props) {
   return (
-    <div className="top-0 sticky group bg-background h-64 lg:h-screen overflow-hidden">
+    <div className="top-0 sticky group bg-background max-lg:aspect-[6] lg:h-screen overflow-hidden">
       <Image
         className={cn(
-          'opacity-60 size-full object-cover pointer-events-none select-none object-center',
+          'max-lg:sr-only opacity-60 size-full object-cover pointer-events-none select-none object-center',
           {
-            'lg:object-top': align === 'top',
-            'lg:object-bottom': align === 'bottom',
+            'object-top': align === 'top',
+            'object-bottom': align === 'bottom',
           },
         )}
         src={path}
         alt={alt}
+        fill
+      />
+
+      <Image
+        className={cn(
+          'lg:sr-only opacity-80 size-full object-cover pointer-events-none select-none object-bottom',
+        )}
+        src="/decorative-strip.png"
+        alt="Decorative Strip"
         fill
       />
 
