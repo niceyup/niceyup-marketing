@@ -26,7 +26,7 @@ export function SideImage({ children, path, alt = 'Generic', align }: Props) {
 
       <Image
         className={cn(
-          'lg:sr-only opacity-80 size-full object-cover pointer-events-none select-none object-bottom',
+          'lg:sr-only opacity-90 size-full object-cover scale-105 pointer-events-none select-none object-bottom',
         )}
         src="/decorative-strip.png"
         alt="Decorative Strip"
