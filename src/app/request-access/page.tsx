@@ -19,7 +19,7 @@ export default function Page() {
         <JoinWaitlistForm />
       </Content>
 
-      <SideImage path="/mountain.png" align="top">
+      <SideImage path="/mountain.png">
         <div className="font-mono group-hover:opacity-100 opacity-60 translate-y-0 group-hover:-translate-y-4 duration-500 ease-out backdrop-blur-md px-3 py-1 rounded-full text-xs text-muted-foreground">
           <span className="select-none pointer-events-none">
             Made in Santa Catarina

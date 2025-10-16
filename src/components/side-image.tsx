@@ -11,6 +11,7 @@ type Props = {
 export function SideImage({ children, path, alt = 'Generic', align }: Props) {
   return (
     <div className="top-0 sticky group bg-background max-lg:aspect-[6] lg:h-screen overflow-hidden">
+      {/* For large screens */}
       <Image
         className={cn(
           'max-lg:sr-only opacity-60 size-full object-cover pointer-events-none select-none object-center',
@@ -24,6 +25,7 @@ export function SideImage({ children, path, alt = 'Generic', align }: Props) {
         fill
       />
 
+      {/* For small screens */}
       <Image
         className={cn(
           'lg:sr-only opacity-90 size-full object-cover scale-105 pointer-events-none select-none object-bottom',

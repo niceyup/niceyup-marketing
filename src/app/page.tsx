@@ -33,7 +33,7 @@ export default async function Home() {
         </span>
       </Content>
 
-      <SideImage path="/mountain.png" align="top">
+      <SideImage path="/mountain.png">
         <div className="group-hover:opacity-100 opacity-60 translate-y-0 group-hover:-translate-y-4 duration-500 ease-out bg-background backdrop-blur-md px-3 py-1 rounded-full text-xs text-muted-foreground">
           <Link
             href="/roadmap"
