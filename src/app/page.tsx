@@ -34,10 +34,10 @@ export default async function Home() {
       </Content>
 
       <SideImage path="/mountain.png">
-        <div className="group-hover:opacity-100 opacity-60 translate-y-0 group-hover:-translate-y-4 duration-500 ease-out bg-background backdrop-blur-md px-3 py-1 rounded-full text-xs text-muted-foreground">
+        <div className="font-mono bg-background backdrop-blur-md px-3 py-1 rounded-full text-xs text-muted-foreground lg:opacity-60 lg:group-hover:opacity-100 lg:translate-y-0 lg:group-hover:-translate-y-4 lg:duration-500 lg:ease-out">
           <Link
             href="/roadmap"
-            className="flex items-center font-mono gap-2 hover:underline hover:underline-offset-4 hover:decoration-dotted hover:text-primary"
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4 hover:decoration-dotted hover:text-primary"
           >
             <MapIcon className="size-4" />
             See our roadmap →
