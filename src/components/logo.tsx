@@ -13,7 +13,7 @@ export function Logo({ className }: { className?: string }) {
       <Image
         className="dark:invert"
         aria-hidden
-        src="/light-logo.png"
+        src="https://assets.niceyup.com/logo-light.png"
         alt="Logo"
         width={24}
         height={24}

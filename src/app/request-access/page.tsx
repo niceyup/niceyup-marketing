@@ -19,7 +19,7 @@ export default function Page() {
         <JoinWaitlistForm />
       </Content>
 
-      <SideImage path="/mountain.png">
+      <SideImage url="https://assets.niceyup.com/image-1.png">
         <div className="font-mono backdrop-blur-md px-3 py-1 rounded-full text-xs text-muted-foreground lg:opacity-60 lg:group-hover:opacity-100 lg:translate-y-0 lg:group-hover:-translate-y-4 lg:duration-500 lg:ease-out">
           <span className="select-none pointer-events-none">
             Made in Santa Catarina

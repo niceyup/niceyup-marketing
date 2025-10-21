@@ -3,12 +3,12 @@ import { cn } from '@/lib/utils'
 
 type Props = {
   children?: React.ReactNode
-  path: string
+  url: string
   alt?: string
   align?: 'top' | 'bottom'
 }
 
-export function SideImage({ children, path, alt = 'Generic', align }: Props) {
+export function SideImage({ children, url, alt = 'Generic', align }: Props) {
   return (
     <div className="top-0 sticky group bg-background max-lg:aspect-[6] lg:h-screen overflow-hidden">
       {/* For large screens */}
@@ -20,7 +20,7 @@ export function SideImage({ children, path, alt = 'Generic', align }: Props) {
             'object-bottom': align === 'bottom',
           },
         )}
-        src={path}
+        src={url}
         alt={alt}
         fill
       />
@@ -30,7 +30,7 @@ export function SideImage({ children, path, alt = 'Generic', align }: Props) {
         className={cn(
           'lg:sr-only opacity-90 size-full object-cover scale-105 pointer-events-none select-none object-bottom',
         )}
-        src="/decorative-strip.png"
+        src="https://assets.niceyup.com/decorative-strip.png"
         alt="Decorative Strip"
         fill
       />

@@ -66,7 +66,7 @@ export default async function Page() {
         )}
       </Content>
 
-      <SideImage path="/top.png" align="bottom">
+      <SideImage url="https://assets.niceyup.com/image-2.png" align="bottom">
         <div className="font-mono bg-background backdrop-blur-md px-3 py-1 rounded-full text-xs text-muted-foreground lg:opacity-60 lg:group-hover:opacity-100 lg:translate-y-0 lg:group-hover:-translate-y-4 lg:duration-500 lg:ease-out">
           <Link
             href={{

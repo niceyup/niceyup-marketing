@@ -5,14 +5,19 @@ export const generateMeta = (): Metadata => {
   const excerpt = 'Your AI-Powered Personal Assistant'
   const description =
     'Not just another chat tool — it’s reimagined so humans and AI work together as true teammates. Built for power users and teams, with memory, collaboration, and effortless integration.'
-  const ogImage = '/og-image.png'
 
   return {
     title: { default: `${title} - ${excerpt}`, template: `%s | ${title}` },
     description,
     icons: [
-      { url: '/light-logo.png', media: '(prefers-color-scheme: light)' },
-      { url: '/dark-logo.png', media: '(prefers-color-scheme: dark)' },
+      {
+        url: 'https://assets.niceyup.com/logo-light.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: 'https://assets.niceyup.com/logo-dark.png',
+        media: '(prefers-color-scheme: dark)',
+      },
     ],
     openGraph: {
       type: 'website',
@@ -20,7 +25,7 @@ export const generateMeta = (): Metadata => {
       title,
       siteName: title,
       description,
-      images: { url: `${getServerSideURL()}${ogImage}` },
+      images: { url: 'https://assets.niceyup.com/og-image.png' },
       emails: ['hello@niceyup.team'],
     },
     creator: 'Niceyup Team',
