@@ -15,6 +15,13 @@
       "when": 1760490137033,
       "tag": "0001_cheerful_abomination",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1766343506023,
+      "tag": "0002_workable_toro",
+      "breakpoints": true
     }
   ]
 }

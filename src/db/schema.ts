@@ -13,12 +13,19 @@ export const occupation = pgEnum('occupation', [
   'other',
 ])
 
+export const waitlistStatus = pgEnum('waitlist_status', [
+  'pending',
+  'authorized',
+  'rejected',
+])
+
 export const waitlist = pgTable('waitlist', {
   ...id,
   name: varchar('name', { length: 256 }).notNull(),
   email: varchar('email', { length: 256 }).notNull().unique(),
   message: text('message'),
   occupation: occupation('occupation').notNull().default('other'),
+  status: waitlistStatus('status').notNull().default('pending'),
   createdAt: timestamp('created_at')
     .notNull()
     .$defaultFn(() => new Date()),
