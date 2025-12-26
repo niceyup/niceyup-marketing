@@ -10,11 +10,11 @@ export default async function Home() {
 
   return (
     <div className="grid w-full lg:grid-cols-2">
-      <Content title="Your AI-Powered Personal Assistant" withLogo>
+      <Content title="Your AI-Powered Assistant for Work and Life" withLogo>
         <p className="text-lg text-muted-foreground">
-          Not just another chat tool — it’s reimagined so humans and AI work
-          together as true teammates. Built for power users and teams, with
-          memory, collaboration, and effortless integration.
+          Not just another chat tool — it was designed so humans and AI work
+          together as true teammates. Create intelligent agents with knowledge
+          sources, custom tools, and real-time collaboration.
         </p>
 
         <div className="flex gap-4 flex-wrap">

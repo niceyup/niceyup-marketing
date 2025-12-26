@@ -42,7 +42,9 @@ export function Content({
           </Link>
         )}
 
-        <h2 className="text-4xl font-semibold leading-tight">{title}</h2>
+        <h2 className="text-4xl font-semibold leading-tight text-balance">
+          {title}
+        </h2>
         {children}
       </div>
       {!noFooter && <Footer />}
